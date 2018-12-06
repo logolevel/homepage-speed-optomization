@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+
     <div class="imageBg">
-        <img src="images/Dimensions5_02.jpg" alt="bg">
+        <picture>
+            <source media="(min-width: 769px)" srcset="images/Dimensions5_02-R960x1080.jpg, images/Dimensions5_02-ORIGINAL.jpg 2x">
+            <source media="(min-width: 320px)" srcset="images/Dimensions5_02-R768x1024.jpg, images/Dimensions5_02-R1536x2048-2x.jpg 2x">
+            <img src="images/Dimensions5_02-R960x1080.jpg" srcset="images/Dimensions5_02-ORIGINAL.jpg 2x" alt="">
+        </picture>
     </div>
 </body>
+
 </html>
